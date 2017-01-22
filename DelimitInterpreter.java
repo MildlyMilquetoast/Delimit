@@ -1,3 +1,12 @@
+/*
+ * Input is via a file called "delimitInput"
+ * The code is given through a file called "delimitCode"
+ *
+ * Output is through stdOut
+ *
+ * starting delmiiter is given as the first command line argument
+*/
+
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
