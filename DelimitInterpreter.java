@@ -4,7 +4,7 @@
  *
  * Output is through stdOut
  *
- * starting delmiiter is given as the first command line argument
+ * The starting delimiter is given as the first command line argument
 */
 
 import java.io.File;
