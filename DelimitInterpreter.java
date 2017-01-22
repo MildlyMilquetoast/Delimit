@@ -374,11 +374,7 @@ public class DelimitInterpreter {
 		
 		if(!stdIn.hasNext()) return -1;
 		
-		char c = stdIn.findInLine(".").charAt(0);
-		
-		System.out.print("char found: " + c);
-		
-		return (int) c;
+		return (int) stdIn.findInLine(".").charAt(0);
 		
 	}
 	
