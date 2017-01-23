@@ -217,7 +217,7 @@ public class DelimitInterpreter {
 				
 			}
 			
-			if(delimiter.equalsIgnoreCase("gaot")){
+			if(delimiter.equalsIgnoreCase("gaot") || delimiter.equalsIgnoreCase("goat")){
 				
 				delimiter = oldDelim;
 				
