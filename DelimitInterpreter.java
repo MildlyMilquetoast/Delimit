@@ -207,6 +207,8 @@ public class DelimitInterpreter {
 		
 		if(!stack.isEmpty()){
 			
+			String oldDelim = delimiter; // purely for Gaot testing
+			
 			delimiter = "";
 			
 			while(!stack.isEmpty() && push(pop()) >= 0){
@@ -215,9 +217,39 @@ public class DelimitInterpreter {
 				
 			}
 			
+			if(delimiter.equalsIgnoreCase("gaot")){
+				
+				delimiter = oldDelim;
+				
+				printGaot();
+				
+			}
+			
 			pop();
 			
 		}
+		
+	}
+	
+	// Yes, you read that correctly
+	public static void printGaot(){
+		
+		System.out.println("                  ___.");
+		System.out.println("                 //  \\\\");
+		System.out.println("                ((   \"\"");
+		System.out.println("                 \\\\__,");
+		System.out.println("                /6 (%)\\,");
+		System.out.println("               (__/:\";,;\\--____----_");
+		System.out.println("                ;; :\";,:\";`;,\";,;\";`,`_");
+		System.out.println("                  ;:,;;\";\";,;\":,\";\";,-Y\\");
+		System.out.println("                   ;,;,;\";\";,;\":;\";\"; Z/");
+		System.out.println("                  / ;,\";\";,;\";,;\";;\"");
+		System.out.println("                 / / |\";/~~~~~\\\";;\"");
+		System.out.println("                 ( K  | |      || |");
+		System.out.println("                  \\_\\ | |      || |");
+		System.out.println("                   \\Z | |      || |");
+		System.out.println("                      L_|      LL_|");
+		System.out.println("                      LW/      LLW/");
 		
 	}
 	
